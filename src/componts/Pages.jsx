@@ -14,7 +14,7 @@ const Pages = () => {
     dispatch(removeFromPastes(pasteId));
   }
   function handleShare(pasteId) {
-    const links="http://localhost:5173/pastes/"+pasteId;
+    const links="https://paste-web-application-mu.vercel.app/pastes/"+pasteId;
     navigator.clipboard.writeText(links);
     toast.success('Link Copied Successfully!!')
   }
